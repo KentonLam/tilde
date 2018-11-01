@@ -910,6 +910,7 @@
 
     hide() {
       $.bodyClassRemove('form');
+      this._formEl.style.backgroundColor = 'var(--color0)';
       this._inputEl.value = '';
       this._inputElVal = '';
     }
