@@ -671,7 +671,10 @@
     }
 
     setOnClick(callback) {
-      this._onClick = callback;
+      this._onClick = (ev) => {
+        const suggestion = ev.target.dataset['suggestion'];
+        callback(suggestion);
+      };
     }
 
     setOnHighlight(callback) {
@@ -735,7 +738,7 @@
 
     _clearClickEvents() {
       this._suggestionEls.forEach(el => {
-        const callback = this._onClick.bind(null, el.value);
+        const callback = this._onClick;
         el.removeEventListener('click', callback);
       });
     }
@@ -801,7 +804,7 @@
           const value = el.getAttribute('data-suggestion');
           el.addEventListener('mouseover', this._highlight.bind(this, el));
           el.addEventListener('mouseout', this._unHighlight.bind(this));
-          el.addEventListener('click', this._onClick.bind(null, value));
+          el.addEventListener('click', this._onClick);
         });
       };
 
