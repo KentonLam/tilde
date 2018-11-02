@@ -13,7 +13,9 @@
       ['University', 'Stat1301', 'us', 'https://learn.uq.edu.au/STAT1301', null, 'rgb(11, 128, 67)'],
       [false, '', 'WORKSHOPS', 'https://courses.smp.uq.edu.au/STAT1301/2018b/index.php', ''],
       ['University', 'Csse2002', 'uc', 'https://learn.uq.edu.au/CSSE2002', null, 'rgb(244, 81, 30)'],
+      [false, '', 'CSSE2002 PIAZZA', 'https://piazza.com/class/jjxlccsshcp2mw', ''],
       ['University', 'Infs1200', 'ui', 'https://learn.uq.edu.au/INFS1200', null, 'rgb(142, 36, 170)'],
+      [false, '', 'INFS1200 PIAZZA', 'https://piazza.com/class/jidw0pl377519t', ''],
 
       ['Work', 'Keep', 'k', 'https://keep.google.com', '/#search/text={}', '#fb0'],
       ['Lurk', 'Hunt', 'H', 'https://www.producthunt.com', '/search?q={}', '#da552f'],
@@ -55,6 +57,8 @@
     defaultSuggestions: {
       'um': [],
       'us': [],
+      'uc': [],
+      'ui': [],
       'd': ['d/u/1'],
       'g': ['g/issues', 'g/pulls', 'gist.github.com', 'g/cadejscroggins'],
       'i': ['i/u/1'],
@@ -100,7 +104,6 @@
     if (command[0] === false) {
       command[5] = parentCommand[5];
       command[6] = false;
-      console.log(command);
       const key = parentCommand[2];
       if (CONFIG.defaultSuggestions[key] !== undefined) {
         CONFIG.defaultSuggestions[key].push(command[2]);
