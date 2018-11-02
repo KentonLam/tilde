@@ -11,6 +11,7 @@
       ['University', 'Math1072', 'um', 'https://learn.uq.edu.au/MATH1072', null, 'rgb(63, 81, 181)'],
       [false, '', 'MATLAB', 'https://courses.smp.uq.edu.au/MATH1052/modules/index.php', ''],
       ['University', 'Stat1301', 'us', 'https://learn.uq.edu.au/STAT1301', null, 'rgb(11, 128, 67)'],
+      [false, '', 'WORKSHOPS', 'https://courses.smp.uq.edu.au/STAT1301/2018b/index.php', ''],
       ['University', 'Csse2002', 'uc', 'https://learn.uq.edu.au/CSSE2002', null, 'rgb(244, 81, 30)'],
       ['University', 'Infs1200', 'ui', 'https://learn.uq.edu.au/INFS1200', null, 'rgb(142, 36, 170)'],
 
@@ -52,7 +53,8 @@
 
     // default search suggestions for the specified queries
     defaultSuggestions: {
-      'um': ['MATLAB'],
+      'um': [],
+      'us': [],
       'd': ['d/u/1'],
       'g': ['g/issues', 'g/pulls', 'gist.github.com', 'g/cadejscroggins'],
       'i': ['i/u/1'],
@@ -93,16 +95,20 @@
     twelveHour: false,
   };
 
-  let currentColour = null;
+  let parentCommand = null;
   for (const command of CONFIG.commands) {
     if (command[0] === false) {
-      command[5] = currentColour;
+      command[5] = parentCommand[5];
       command[6] = false;
       console.log(command);
+      const key = parentCommand[2];
+      if (CONFIG.defaultSuggestions[key] !== undefined) {
+        CONFIG.defaultSuggestions[key].push(command[2]);
+      }
     } else {
       if (command[6] === undefined)
         command[6] = true;
-      currentColour = command[5];
+      parentCommand = command;
     }
   }
 </script>
