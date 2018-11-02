@@ -7,7 +7,7 @@
     // if none of the specified keys are matched, the '*' key is used
     commands: [
       [null, 'Google', '*', 'https://encrypted.google.com', '/search?q={}', '#111'],
-      ['University', 'Learn.UQ', 'u', 'https://learn.uq.edu.au', '/{}', '#6a2885', false],
+      [false, 'Learn.UQ', 'u', 'https://learn.uq.edu.au', '/{}', '#6a2885', false],
       ['University', 'Math1072', 'um', 'https://learn.uq.edu.au/MATH1072', null, 'rgb(63, 81, 181)'],
       [false, '', 'MATLAB', 'https://courses.smp.uq.edu.au/MATH1052/modules/index.php', ''],
       ['University', 'Stat1301', 'us', 'https://learn.uq.edu.au/STAT1301', null, 'rgb(11, 128, 67)'],
@@ -103,14 +103,11 @@
   for (const command of CONFIG.commands) {
     if (command[0] === false) {
       command[5] = parentCommand[5];
-      command[6] = false;
       const key = parentCommand[2];
       if (CONFIG.defaultSuggestions[key] !== undefined) {
         CONFIG.defaultSuggestions[key].push(command[2]);
       }
     } else {
-      if (command[6] === undefined)
-        command[6] = true;
       parentCommand = command;
     }
   }
@@ -488,7 +485,7 @@
   class Help {
     constructor(options) {
       this._el = $.el('#help');
-      this._commands = options.commands.filter(c => c[6]);
+      this._commands = options.commands;
       this._newTab = options.newTab;
       this._toggled = false;
       this._handleKeydown = this._handleKeydown.bind(this);
