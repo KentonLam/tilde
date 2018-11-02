@@ -6,30 +6,32 @@
     // the category, name, key, url, search path and color for your commands
     // if none of the specified keys are matched, the '*' key is used
     commands: [
-      [null, 'Google', '*', 'https://encrypted.google.com', '/search?q={}', '#111', true],
-      ['University', 'Learn.UQ', 'u', 'https://learn.uq.edu.au', '/{}', '#6a2885', true],
-      ['University', 'Math1072', 'um', 'https://learn.uq.edu.au/MATH1072', null, 'rgb(63, 81, 181)', true],
-      ['University', 'Stat1301', 'us', 'https://learn.uq.edu.au/STAT1301', null, 'rgb(11, 128, 67)', true],
-      ['University', 'Csse2002', 'uc', 'https://learn.uq.edu.au/CSSE2002', null, 'rgb(244, 81, 30)', true],
-      ['University', 'Infs1200', 'ui', 'https://learn.uq.edu.au/INFS1200', null, 'rgb(142, 36, 170)', true],
-      ['Work', 'Keep', 'k', 'https://keep.google.com', '/#search/text={}', '#fb0', true],
-      ['Lurk', 'Hunt', 'H', 'https://www.producthunt.com', '/search?q={}', '#da552f', true],
-      ['Lurk', 'Photos', 'p', 'https://photos.google.com', '/search/{}', '#34a853', true],
-      ['Lurk', 'Reddit', 'r', 'https://www.reddit.com', '/search?q={}', '#5f99cf', true],
-      ['Listen', 'Hypem', 'h', 'https://hypem.com/popular', '/search/{}', '#83c441', true],
-      ['Listen', 'Line Radio', 'l', 'https://linerad.io', '/#{}', '#39CCCC', true],
-      ['Listen', 'SoundCloud', 's', 'https://soundcloud.com/discover', '/search?q={}', '#ff8800', true],
-      ['Listen', 'YouTube Music', 'm', 'https://music.youtube.com', '/search?q={}', '#FF0004', true],
-      ['Watch', 'Netflix', 'n', 'https://www.netflix.com/browse', '/search?q={}', '#e50914', true],
-      ['Watch', 'Twitch', 't', 'https://www.twitch.tv/directory/following', null, '#6441a5', true],
-      ['Watch', 'YouTube', 'y', 'https://youtube.com/feed/subscriptions', '/results?search_query={}', '#cd201f', true],
-      ['Learn', 'Academy', 'a', 'https://www.khanacademy.org', '/search?page_search_query={}', '#9cb443', true],
-      ['Learn', 'Coursera', 'c', 'https://www.coursera.org', '/courses?query={}', '#407ED7', true],
-      ['Learn', 'Egghead', 'e', 'https://egghead.io', '/search?q={}', '#171C23', true],
-      ['Download', '7digital', '7', 'https://us.7digital.com', '/search?q={}', '#07606e', true],
-      ['Download', 'RARBG', 'R', 'https://rarbg.to', '/torrents.php?search={}', '#00d1b2', true],
-      ['Download', 'Pirate Bay', 'b', 'https://thepiratebay.org', '/search/{}', '#4c4132', true],
-      ['Download', 'YTS', 'Y', 'https://yts.am/browse-movies/all/1080p/all/7/latest', '/browse-movies/{}', '#2f2f2f', true],
+      [null, 'Google', '*', 'https://encrypted.google.com', '/search?q={}', '#111'],
+      ['University', 'Learn.UQ', 'u', 'https://learn.uq.edu.au', '/{}', '#6a2885', false],
+      ['University', 'Math1072', 'um', 'https://learn.uq.edu.au/MATH1072', null, 'rgb(63, 81, 181)'],
+      [false, '', 'MATLAB', 'https://courses.smp.uq.edu.au/MATH1052/modules/index.php', ''],
+      ['University', 'Stat1301', 'us', 'https://learn.uq.edu.au/STAT1301', null, 'rgb(11, 128, 67)'],
+      ['University', 'Csse2002', 'uc', 'https://learn.uq.edu.au/CSSE2002', null, 'rgb(244, 81, 30)'],
+      ['University', 'Infs1200', 'ui', 'https://learn.uq.edu.au/INFS1200', null, 'rgb(142, 36, 170)'],
+
+      ['Work', 'Keep', 'k', 'https://keep.google.com', '/#search/text={}', '#fb0'],
+      ['Lurk', 'Hunt', 'H', 'https://www.producthunt.com', '/search?q={}', '#da552f'],
+      ['Lurk', 'Photos', 'p', 'https://photos.google.com', '/search/{}', '#34a853'],
+      ['Lurk', 'Reddit', 'r', 'https://www.reddit.com', '/search?q={}', '#5f99cf'],
+      ['Listen', 'Hypem', 'h', 'https://hypem.com/popular', '/search/{}', '#83c441'],
+      ['Listen', 'Line Radio', 'l', 'https://linerad.io', '/#{}', '#39CCCC'],
+      ['Listen', 'SoundCloud', 's', 'https://soundcloud.com/discover', '/search?q={}', '#ff8800'],
+      ['Listen', 'YouTube Music', 'm', 'https://music.youtube.com', '/search?q={}', '#FF0004'],
+      ['Watch', 'Netflix', 'n', 'https://www.netflix.com/browse', '/search?q={}', '#e50914'],
+      ['Watch', 'Twitch', 't', 'https://www.twitch.tv/directory/following', null, '#6441a5'],
+      ['Watch', 'YouTube', 'y', 'https://youtube.com/feed/subscriptions', '/results?search_query={}', '#cd201f'],
+      ['Learn', 'Academy', 'a', 'https://www.khanacademy.org', '/search?page_search_query={}', '#9cb443'],
+      ['Learn', 'Coursera', 'c', 'https://www.coursera.org', '/courses?query={}', '#407ED7'],
+      ['Learn', 'Egghead', 'e', 'https://egghead.io', '/search?q={}', '#171C23'],
+      ['Download', '7digital', '7', 'https://us.7digital.com', '/search?q={}', '#07606e'],
+      ['Download', 'RARBG', 'R', 'https://rarbg.to', '/torrents.php?search={}', '#00d1b2'],
+      ['Download', 'Pirate Bay', 'b', 'https://thepiratebay.org', '/search/{}', '#4c4132'],
+      ['Download', 'YTS', 'Y', 'https://yts.am/browse-movies/all/1080p/all/7/latest', '/browse-movies/{}', '#2f2f2f'],
     ],
 
     // give suggestions as you type
@@ -50,6 +52,7 @@
 
     // default search suggestions for the specified queries
     defaultSuggestions: {
+      'um': ['MATLAB'],
       'd': ['d/u/1'],
       'g': ['g/issues', 'g/pulls', 'gist.github.com', 'g/cadejscroggins'],
       'i': ['i/u/1'],
@@ -89,6 +92,19 @@
     // change clock to twelve hour format
     twelveHour: false,
   };
+
+  let currentColour = null;
+  for (const command of CONFIG.commands) {
+    if (command[0] === false) {
+      command[5] = currentColour;
+      command[6] = false;
+      console.log(command);
+    } else {
+      if (command[6] === undefined)
+        command[6] = true;
+      currentColour = command[5];
+    }
+  }
 </script>
 
 <meta charset="utf-8">
