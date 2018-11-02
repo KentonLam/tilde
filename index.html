@@ -859,6 +859,10 @@
     static _getColorFromUrl(commands, url) {
       const domain = new URL(url).hostname;
 
+      const exactMatch = commands.filter(c => c[3] === url).map(c => c[5])[0];
+      if (exactMatch) 
+        return exactMatch;
+
       return commands
         .filter(c => new URL(c[3]).hostname === domain)
         .map(c => c[5])[0] || null;
