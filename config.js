@@ -18,11 +18,13 @@ const CONFIG = {
 
     ['Social', 'Twitter', 't', 'https://twitter.com', '/search?q={}', '#4ab3f4'],
     ['Social', 'Facebook', 'f', 'https://www.facebook.com', '/search/top/?q={}', '#4267b2'],
-    [false, '', 'Messenger', 'https://www.facebook.com/messages/', null],
+    ['Social', 'Reddit', 'r', 'https://www.reddit.com', '/search?q={}', '#5f99cf'],
 
     ['Watch', 'Netflix', 'n', 'https://www.netflix.com/browse', '/search?q={}', '#e50914'],
     ['Watch', 'Twitch', 't', 'https://www.twitch.tv/directory/following', null, '#6441a5'],
     ['Watch', 'YouTube', 'y', 'https://youtube.com/feed/subscriptions', '/results?search_query={}', '#cd201f'],
+
+    ['Work', 'GitHub', 'g', 'https://github.com', null, 'var(--nord0)']
   ],
 
   // give suggestions as you type
@@ -47,9 +49,9 @@ const CONFIG = {
     'us': [],
     'uc': [],
     'ui': [],
-    'f': [],
+    'f': ['f/messages'],
     'd': ['d/u/1'],
-    'g': ['g/issues', 'g/pulls', 'gist.github.com', 'g/cadejscroggins'],
+    'g': ['g/KentonLam', 'g/issues', 'g/pulls'],
     'i': ['i/u/1'],
     'k': ['k/u/1'],
     'l': ['l/#electronic+chill', 'l/#synthwave+chillwave', 'l/#focus+instrumental', 'l/#piano+sleep'],
