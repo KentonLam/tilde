@@ -10,7 +10,7 @@ const CONFIG = {
     ['University', 'Stat1301', 'us', 'https://learn.uq.edu.au/STAT1301', null, 'rgb(11, 128, 67)'],
     [false, '', 'Workshops', 'https://courses.smp.uq.edu.au/STAT1301/2018b/index.php', null],
     [false, '', 'Tables', 'https://people.smp.uq.edu.au/MichaelBulmer/pida/pida52/Tables.pdf', null],
-    ['University', 'Csse2002', 'uc', 'https://learn.uq.edu.au/CSSE2002', null, 'rgb(244, 81, 30)'],
+    ['University', 'Csse2002', 'uc', 'https://learn.uq.edu.au/CSSE2002', null, 'rgb(192, 73, 36)'],
     [false, '', 'CSSE2002 Piazza', 'https://piazza.com/class/jjxlccsshcp2mw', null],
     ['University', 'Infs1200', 'ui', 'https://learn.uq.edu.au/INFS1200', null, 'rgb(142, 36, 170)'],
     [false, '', 'INFS1200 Piazza', 'https://piazza.com/class/jidw0pl377519t', null],
