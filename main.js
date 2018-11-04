@@ -317,8 +317,8 @@ class Suggester {
 
   _appendSuggestions(suggestions, input) {
     for (const [i, suggestion] of suggestions.entries()) {
-      const match = new RegExp($.escapeRegex(input), 'ig');
-      const suggestionHtml = suggestion.replace(match, `<b>${input}</b>`);
+      const match = new RegExp('('+$.escapeRegex(input)+')', 'ig');
+      const suggestionHtml = suggestion.replace(match, '<b>$1</b>');
 
       this._el.insertAdjacentHTML(
         'beforeend',
