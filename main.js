@@ -38,6 +38,10 @@ const $ = {
   },
 
   pad: v => ('0' + v.toString()).slice(-2),
+  tickInterval: (f, tick) => {
+    f();
+    setTimeout(() => $.tickTimeout(f, tick), tick-Date.now()%tick);
+  }
 };
 
 class Clock {
@@ -73,8 +77,7 @@ class Clock {
   }
 
   _start() {
-    this._setTime();
-    setInterval(this._setTime, 1000);
+    $.tickInterval(this._setTime, 60000);
   }
 }
 
