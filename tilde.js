@@ -146,8 +146,11 @@ class Week {
 
     if (typeof w === 'undefined') {
       this._el.innerHTML = '';
+      this._el.style.display = 'none';
       return;
     }
+    
+    this._el.style.display = null;
     
     // Compute the first Monday after w.start.
     const firstMon = w.start;
