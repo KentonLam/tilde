@@ -24,7 +24,7 @@ const CONFIG = {
     ['Watch', 'Twitch', 't', 'https://www.twitch.tv/directory/following', null, '#6441a5'],
     ['Watch', 'YouTube', 'y', 'https://youtube.com/feed/subscriptions', '/results?search_query={}', '#cd201f'],
 
-    ['Work', 'GitHub', 'g', 'https://github.com', null, 'var(--nord0)']
+    ['Work', 'GitHub', 'g', 'https://github.com', null, 'var(--nord1)']
   ],
 
   // give suggestions as you type
