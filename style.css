@@ -61,7 +61,7 @@ a:focus {
   cursor: pointer;
 }
 
-#date, #week {
+#date {
   font-size: 2rem;
   letter-spacing: 0.02em;
   word-spacing: 0.2em;
@@ -70,6 +70,7 @@ a:focus {
 #week {
   font-size: 1.7rem;
   word-spacing: 0.1em;
+  letter-spacing: 0.02em;
 }
 
 #am-pm {
