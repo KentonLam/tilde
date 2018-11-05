@@ -624,6 +624,7 @@ class Form {
 
   hide() {
     $.bodyClassRemove('form');
+    this._suggester._clearSuggestions();
     this._formEl.style.backgroundColor = 'var(--color0)';
     this._inputEl.value = '';
     this._inputElVal = '';
