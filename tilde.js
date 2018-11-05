@@ -101,7 +101,7 @@ class DateDisplay {
     const mm = date.getMonth() + 1; // zero indexed
     const yyyy = date.getFullYear();
 
-    this._el.textContent = `${dd}${d}${mm}${d}${yyyy}`;
+    this._el.innerHTML = `${dd}${d}${mm}${d}${yyyy}`;
   }
 }
 
