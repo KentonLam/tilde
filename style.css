@@ -63,12 +63,13 @@ a:focus {
 
 #date, #week {
   font-size: 2rem;
-  letter-spacing: normal;
+  letter-spacing: 0.02em;
   word-spacing: 0.2em;
 }
 
 #week {
   font-size: 1.7rem;
+  word-spacing: 0.1em;
 }
 
 #am-pm {
