@@ -138,7 +138,6 @@ class Week {
   _setWeek() {
     const today = new Date();
     today.setHours(0, 0, 0, 0);
-    console.log(this._weeks);
     
     const w = this._weeks
       .filter(w => w.start<=today && today <=w.end)
@@ -153,9 +152,7 @@ class Week {
     // Compute the first Monday after w.start.
     const firstMon = w.start;
     firstMon.setDate(firstMon.getDate() + (1+7-firstMon.getDay()) % 7);
-    console.log(w);
     
-
     const WEEK = 1000*60*60*24*7;
     const weeksElapsed = Math.max(0, Math.floor((today-firstMon) / WEEK));
 
