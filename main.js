@@ -40,7 +40,7 @@ const $ = {
   pad: v => ('0' + v.toString()).slice(-2),
   tickInterval: (f, tick) => {
     f();
-    setTimeout(() => $.tickTimeout(f, tick), tick-Date.now()%tick);
+    setTimeout(() => $.tickInterval(f, tick), tick-Date.now()%tick);
   }
 };
 
@@ -78,6 +78,30 @@ class Clock {
 
   _start() {
     $.tickInterval(this._setTime, 60000);
+  }
+}
+
+class DateDisplay {
+  constructor(options) {
+    this._el = $.el('#date');
+    this._delimiter = options.delimiter;
+    this._setDate = this._setDate.bind(this);
+    this._start();
+  }
+
+  _start() {
+    $.tickInterval(this._setDate, 1000*60*60*24);
+  }
+
+  _setDate() {
+    const d = this._delimiter;
+    
+    const date = new Date();
+    const dd = date.getDate();
+    const mm = date.getMonth() + 1; // zero indexed
+    const yyyy = date.getFullYear();
+
+    this._el.textContent = `${dd}${d}${mm}${d}${yyyy}`;
   }
 }
 

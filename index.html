@@ -12,8 +12,10 @@
 
 <link rel="stylesheet" type="text/css" href="style.css"/>
 
-<div class="center">
+<div class="center column">
+  <div id="week">Week 15 &mdash; Exams</div>
   <time id="clock"></time>
+  <div id="date"></div>
 </div>
 
 <form class="overlay center" id="search-form" autocomplete="off" spellcheck="false">
@@ -77,10 +79,16 @@
     });
   };
 
+  const form = getForm();
+
   new Clock({
     twelveHour: CONFIG.twelveHour,
     delimiter: CONFIG.clockDelimiter,
-    form: getForm(),
+    form: form,
+  });
+
+  new DateDisplay({
+    delimiter: CONFIG.dateDelimiter
   });
 
   if (CONFIG.theme) {

@@ -86,6 +86,9 @@ const CONFIG = {
   // the delimiter between the hours and minutes in the clock
   clockDelimiter: ' ',
 
+  // the delimiter between day, month and year
+  dateDelimiter: ' ',
+
   // change clock to twelve hour format
   twelveHour: false,
 };
