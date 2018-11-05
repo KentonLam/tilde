@@ -105,6 +105,65 @@ class DateDisplay {
   }
 }
 
+class Week {
+  constructor(options) {
+    this._el = $.el('#week');
+    this._delimiter = options.delimiter;
+    this._weeks = this._parseWeeks(options.weeks); 
+    this._setWeek = this._setWeek.bind(this);
+    this._start();
+  }
+
+  _parseDate(date) {
+    const dateParts = date.split('-');
+    return new Date(
+      parseInt(dateParts[0]), parseInt(dateParts[1])-1, parseInt(dateParts[2]));
+  }
+
+  _parseWeeks(weeks) {
+    return weeks.map(w => {
+      return {
+        start: this._parseDate(w['start']),
+        end: this._parseDate(w['end']),
+        from: w['from'],
+        name: w['name']
+      }
+    });
+  }
+
+  _start() {
+    $.tickInterval(this._setWeek, 1000*60*60*24);
+  }
+
+  _setWeek() {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    console.log(this._weeks);
+    
+    const w = this._weeks
+      .filter(w => w.start<=today && today <=w.end)
+      .sort(w => w.start)
+      [0];
+
+    if (typeof w === 'undefined') {
+      this._el.innerHTML = '';
+      return;
+    }
+    
+    // Compute the first Monday after w.start.
+    const firstMon = w.start;
+    firstMon.setDate(firstMon.getDate() + (1+7-firstMon.getDay()) % 7);
+    console.log(w);
+    
+
+    const WEEK = 1000*60*60*24*7;
+    const weeksElapsed = Math.max(0, Math.floor((today-firstMon) / WEEK));
+
+    const d = this._delimiter;
+    this._el.innerHTML = `Week ${w.from+weeksElapsed}${d}${w.name}`;
+  }
+}
+
 class Help {
   constructor(options) {
     this._el = $.el('#help');

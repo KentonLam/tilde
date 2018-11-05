@@ -91,6 +91,11 @@
     delimiter: CONFIG.dateDelimiter
   });
 
+  new Week({
+    delimiter: CONFIG.weekDelimiter,
+    weeks: CONFIG.weeks,
+  });
+
   if (CONFIG.theme) {
     const link = document.createElement('link');
     link.href = CONFIG.theme;
