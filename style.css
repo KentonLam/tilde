@@ -79,7 +79,7 @@ a:focus {
 
 #search-form {
   padding: 1em;
-  background-color: var(--color15);
+  background-color: var(--color0);
   transition: background-color .5s;
   color: var(--color15);
   box-sizing: border-box;
