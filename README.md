@@ -1,5 +1,12 @@
 # Tilde
 
+My version of the [tilde](https://github.com/cadejscroggins/tilde) start page
+with various improvements.
+Displays the date and UQ's academic week. Theme based on 
+[Vincevrp/Startpage](https://github.com/Vincevrp/Startpage).
+
+------------------------
+
 Inspired by [/r/startpages](https://www.reddit.com/r/startpages)—the idea is to have a homepage for your browser that is functional and sexy.
 
 ![Screenshot](SCREENSHOT.png?raw=true "Screenshot")
