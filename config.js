@@ -15,6 +15,10 @@ const CONFIG = {
     ['Courses', 'Infs1200', 'ui', 'https://learn.uq.edu.au/INFS1200', null, 'rgb(142, 36, 170)'],
     [false, '', 'INFS1200 Piazza', 'https://piazza.com/class/jidw0pl377519t', null],
     [false, '', 'RiPPLE', 'https://learn.uq.edu.au/webapps/osc-BasicLTI-BBLEARN/tool.jsp?course_id=_118614_1&content_id=_4068515_1', null],
+    
+    ['University', 'GitHub', 'g', 'https://github.com', null, 'var(--nord1)'],
+    ['University', 'UQCS Slack', 's', 'https://uqcs.slack.com', null, '#4d394b'],
+    ['University', 'Exams', 'ue', 'https://www.library.uq.edu.au/exams/', '/exams/papers.php?stub={}', '#6a2885'],
 
     ['Social', 'Twitter', 't', 'https://twitter.com', '/search?q={}', '#4ab3f4'],
     ['Social', 'Facebook', 'f', 'https://www.facebook.com', '/search/top/?q={}', '#4267b2'],
@@ -24,7 +28,6 @@ const CONFIG = {
     ['Watch', 'Twitch', 't', 'https://www.twitch.tv/directory/following', null, '#6441a5'],
     ['Watch', 'YouTube', 'y', 'https://youtube.com/feed/subscriptions', '/results?search_query={}', '#cd201f'],
 
-    ['Work', 'GitHub', 'g', 'https://github.com', null, 'var(--nord1)']
   ],
 
   // give suggestions as you type
