@@ -5,14 +5,14 @@ const CONFIG = {
   commands: [
     [null, 'Google', '*', 'https://encrypted.google.com', '/search?q={}', '#111'],
     [false, 'Learn.UQ', 'u', 'https://learn.uq.edu.au', '/webapps/blackboard/execute/viewCatalog?type=Course&command=NewSearch&searchText={}', '#6a2885'],
-    ['University', 'Math1072', 'um', 'https://learn.uq.edu.au/MATH1072', null, 'rgb(63, 81, 181)'],
+    ['Courses', 'Math1072', 'um', 'https://learn.uq.edu.au/MATH1072', null, 'rgb(63, 81, 181)'],
     [false, '', 'MATLAB', 'https://courses.smp.uq.edu.au/MATH1052/modules/index.php', null],
-    ['University', 'Stat1301', 'us', 'https://learn.uq.edu.au/STAT1301', null, 'rgb(11, 128, 67)'],
+    ['Courses', 'Stat1301', 'us', 'https://learn.uq.edu.au/STAT1301', null, 'rgb(11, 128, 67)'],
     [false, '', 'Workshops', 'https://courses.smp.uq.edu.au/STAT1301/2018b/index.php', null],
     [false, '', 'Tables', 'https://people.smp.uq.edu.au/MichaelBulmer/pida/pida52/Tables.pdf', null],
-    ['University', 'Csse2002', 'uc', 'https://learn.uq.edu.au/CSSE2002', null, 'rgb(192, 73, 36)'],
+    ['Courses', 'Csse2002', 'uc', 'https://learn.uq.edu.au/CSSE2002', null, 'rgb(192, 73, 36)'],
     [false, '', 'CSSE2002 Piazza', 'https://piazza.com/class/jjxlccsshcp2mw', null],
-    ['University', 'Infs1200', 'ui', 'https://learn.uq.edu.au/INFS1200', null, 'rgb(142, 36, 170)'],
+    ['Courses', 'Infs1200', 'ui', 'https://learn.uq.edu.au/INFS1200', null, 'rgb(142, 36, 170)'],
     [false, '', 'INFS1200 Piazza', 'https://piazza.com/class/jidw0pl377519t', null],
     [false, '', 'RiPPLE', 'https://learn.uq.edu.au/webapps/osc-BasicLTI-BBLEARN/tool.jsp?course_id=_118614_1&content_id=_4068515_1', null],
 
