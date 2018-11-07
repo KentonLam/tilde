@@ -4,7 +4,6 @@ const CONFIG = {
   // if none of the specified keys are matched, the '*' key is used
   commands: [
     [null, 'Google', '*', 'https://encrypted.google.com', '/search?q={}', 'var(--nord0)'],
-    [false, 'Learn.UQ', 'u', 'https://learn.uq.edu.au', '/webapps/blackboard/execute/viewCatalog?type=Course&command=NewSearch&searchText={}', '#6a2885'],
     ['Courses', 'Math1072', 'um', 'https://learn.uq.edu.au/MATH1072', null, 'rgb(63, 81, 181)'],
     [false, '', 'MATLAB', 'https://courses.smp.uq.edu.au/MATH1052/modules/index.php', null],
     ['Courses', 'Stat1301', 'us', 'https://learn.uq.edu.au/STAT1301', null, 'rgb(11, 128, 67)'],
@@ -16,6 +15,7 @@ const CONFIG = {
     [false, '', 'INFS1200 Piazza', 'https://piazza.com/class/jidw0pl377519t', null],
     [false, '', 'RiPPLE', 'https://learn.uq.edu.au/webapps/osc-BasicLTI-BBLEARN/tool.jsp?course_id=_118614_1&content_id=_4068515_1', null],
     
+    ['University', 'Learn.UQ', 'u', 'https://learn.uq.edu.au', '/webapps/blackboard/execute/viewCatalog?type=Course&command=NewSearch&searchText={}', '#6a2885'],
     ['University', 'GitHub', 'g', 'https://github.com', null, 'var(--nord1)'],
     ['University', 'UQCS Slack', 's', 'https://uqcs.slack.com', null, '#4d394b'],
     ['University', 'Exams', 'ue', 'https://www.library.uq.edu.au/exams/', '/exams/papers.php?stub={}', '#6a2885'],
