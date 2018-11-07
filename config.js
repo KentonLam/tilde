@@ -20,6 +20,9 @@ const CONFIG = {
     ['University', 'UQCS Slack', 's', 'https://uqcs.slack.com', null, '#4d394b'],
     ['University', 'Exams', 'ue', 'https://www.library.uq.edu.au/exams/', '/exams/papers.php?stub={}', '#6a2885'],
 
+    ['Personal', 'Calendar', 'c', 'https://calendar.google.com/calendar/r', null, '#3a66cf'],
+    ['Personal', 'Gmail', 'm', 'https://mail.google.com/mail/', null, '#3a66cf'],
+
     ['Social', 'Twitter', 't', 'https://twitter.com', '/search?q={}', '#4ab3f4'],
     ['Social', 'Facebook', 'f', 'https://www.facebook.com', '/search/top/?q={}', '#4267b2'],
     ['Social', 'Reddit', 'r', 'https://www.reddit.com', '/search?q={}', '#5f99cf'],
@@ -53,15 +56,9 @@ const CONFIG = {
     'uc': [],
     'ui': [],
     'f': ['f/messages'],
-    'd': ['d/u/1'],
     'g': ['g/KentonLam', 'g/issues', 'g/pulls'],
-    'i': ['i/u/1'],
-    'k': ['k/u/1'],
-    'l': ['l/#electronic+chill', 'l/#synthwave+chillwave', 'l/#focus+instrumental', 'l/#piano+sleep'],
-    'm': ['m/music/listen?u=1#/all'],
-    'p': ['p/u/1'],
+    'c': ['c/r/week', 'c/r/month'],
     'r': ['r/r/unixporn', 'r/r/startpages', 'r/r/webdev', 'r/r/technology'],
-    's': ['s/you/likes', 's/discover/the-upload'],
   },
 
   // instantly redirect when a key is matched
