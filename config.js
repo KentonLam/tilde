@@ -4,7 +4,7 @@ const CONFIG = {
   // if none of the specified keys are matched, the '*' key is used
   commands: [
     [null, 'Google', '*', 'https://encrypted.google.com', '/search?q={}', 'var(--nord0)'],
-    ['Courses', 'Math2002', 'um', 'https://learn.uq.edu.au/MATH2002', null, 'rgb(63, 81, 181)'],
+    ['Courses', 'Math2001', 'um', 'https://learn.uq.edu.au/MATH2001', null, 'rgb(63, 81, 181)'],
     /*[false, '', 'MATLAB', 'https://courses.smp.uq.edu.au/MATH1052/modules/index.php', null],
     ['Courses', 'Stat1301', 'us', 'https://learn.uq.edu.au/STAT1301', null, 'rgb(11, 128, 67)'],
     [false, '', 'Workshops', 'https://courses.smp.uq.edu.au/STAT1301/2018b/index.php', null],
