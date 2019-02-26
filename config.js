@@ -4,14 +4,14 @@ const CONFIG = {
   // if none of the specified keys are matched, the '*' key is used
   commands: [
     [null, 'Google', '*', 'https://encrypted.google.com', '/search?q={}', 'var(--nord0)'],
-    ['Courses', 'Math2001', 'um', 'https://learn.uq.edu.au/MATH2001', null, 'rgb(63, 81, 181)'],
+    ['Courses', 'Math2401', 'um', 'https://learn.uq.edu.au/MATH2401', null, 'rgb(63, 81, 181)'],
+    ['Courses', 'Math3202', 'uo', 'https://learn.uq.edu.au/MATH3202', null, 'rgb(142, 36, 170)'],
+    ['Courses', 'Stat2003', 'us', 'https://learn.uq.edu.au/STAT2003', null, 'rgb(11, 128, 67)'],
+    ['Courses', 'Csse2010', 'uc', 'https://learn.uq.edu.au/CSSE2010', null, 'rgb(192, 73, 36)'],
     /*[false, '', 'MATLAB', 'https://courses.smp.uq.edu.au/MATH1052/modules/index.php', null],
-    ['Courses', 'Stat1301', 'us', 'https://learn.uq.edu.au/STAT1301', null, 'rgb(11, 128, 67)'],
     [false, '', 'Workshops', 'https://courses.smp.uq.edu.au/STAT1301/2018b/index.php', null],
     [false, '', 'Tables', 'https://people.smp.uq.edu.au/MichaelBulmer/pida/pida52/Tables.pdf', null],
-    ['Courses', 'Csse2002', 'uc', 'https://learn.uq.edu.au/CSSE2002', null, 'rgb(192, 73, 36)'],
     [false, '', 'CSSE2002 Piazza', 'https://piazza.com/class/jjxlccsshcp2mw', null],
-    ['Courses', 'Infs1200', 'ui', 'https://learn.uq.edu.au/INFS1200', null, 'rgb(142, 36, 170)'],
     [false, '', 'INFS1200 Piazza', 'https://piazza.com/class/jidw0pl377519t', null],
     [false, '', 'RiPPLE', 'https://learn.uq.edu.au/webapps/osc-BasicLTI-BBLEARN/tool.jsp?course_id=_118614_1&content_id=_4068515_1', null],*/
     
@@ -28,7 +28,7 @@ const CONFIG = {
     ['Social', 'Reddit', 'r', 'https://www.reddit.com', '/search?q={}', '#5f99cf'],
 
     ['Watch', 'Netflix', 'n', 'https://www.netflix.com/browse', '/search?q={}', '#e50914'],
-    ['Watch', 'Twitch', 't', 'https://www.twitch.tv/directory/following', null, '#6441a5'],
+    ['Watch', 'Twitch', 'w', 'https://www.twitch.tv/directory/following', null, '#6441a5'],
     ['Watch', 'YouTube', 'y', 'https://youtube.com/feed/subscriptions', '/results?search_query={}', '#cd201f'],
 
   ],
