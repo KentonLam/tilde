@@ -671,7 +671,12 @@ class Form {
   }
 
   _loadQueryParam() {
-    const q = new URLSearchParams(window.location.search).get('q');
+    const params = new URLSearchParams(window.location.search);
+    const q = params.get('q');
+    const n = params.get('n');
+    if (n === '1' || n === '0') {
+      this.newTab = n === '1';
+    }
     if (q) this._submitWithValue(q);
   }
 
