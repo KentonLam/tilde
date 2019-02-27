@@ -675,7 +675,7 @@ class Form {
     const q = params.get('q');
     const n = params.get('n');
     if (n === '1' || n === '0') {
-      this.newTab = n === '1';
+      this._newTab = n === '1';
     }
     if (q) this._submitWithValue(q);
   }
