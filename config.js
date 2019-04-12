@@ -6,8 +6,13 @@ const CONFIG = {
     [null, 'Google', '*', 'https://encrypted.google.com', '/search?q={}', 'var(--nord0)'],
     ['Courses', 'Math2401', 'um', 'https://learn.uq.edu.au/MATH2401', null, 'rgb(63, 81, 181)'],
     ['Courses', 'Math3202', 'uo', 'https://learn.uq.edu.au/MATH3202', null, 'rgb(142, 36, 170)'],
+    [false, '', 'Client Comms', 'https://learn.uq.edu.au/webapps/osc-BasicLTI-BBLEARN/iframe.jsp?course_id=_120976_1&content_id=_4440824_1&id=', null],
     ['Courses', 'Stat2003', 'us', 'https://learn.uq.edu.au/STAT2003', null, 'rgb(11, 128, 67)'],
+    
     ['Courses', 'Csse2010', 'uc', 'https://learn.uq.edu.au/CSSE2010', null, 'rgb(192, 73, 36)'],
+    [false, '', 'Utils', 'https://kentonlam.xyz/atmel-avr-isa', null],
+    [false, '', 'Piazza', 'https://piazza.com/class/jsd22g4dpmx9l', null],
+    [false, '', 'Midsem', 'https://learn.uq.edu.au/webapps/blackboard/content/listContent.jsp?course_id=_120395_1&content_id=_4343952_1', null],
     /*[false, '', 'MATLAB', 'https://courses.smp.uq.edu.au/MATH1052/modules/index.php', null],
     [false, '', 'Workshops', 'https://courses.smp.uq.edu.au/STAT1301/2018b/index.php', null],
     [false, '', 'Tables', 'https://people.smp.uq.edu.au/MichaelBulmer/pida/pida52/Tables.pdf', null],
@@ -52,9 +57,9 @@ const CONFIG = {
   // default search suggestions for the specified queries
   defaultSuggestions: {
     'um': [],
-    'us': [],
+    'uo': [],
     'uc': [],
-    'ui': [],
+    'us': [],
     'f': ['f/messages'],
     'g': ['g/KentonLam', 'g/issues', 'g/pulls'],
     'c': ['c/r/week', 'c/r/month'],
