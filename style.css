@@ -3,7 +3,8 @@
 @import url('nord.css');
 
 :root {
-  --color0: var(--nord0);
+  /* --color0: var(--nord0); */
+  --color0: #2a2a2a;
   --color15: var(--nord6);
 }
 
@@ -282,4 +283,180 @@ body.form #search-form.overlay {
   .categories {
     grid-template-columns: repeat(5, 250px) 185px;
   }
+}
+
+/* ================= Iro startpage ================= */
+
+/*
+  Spacing
+*/
+
+:root {
+  --spacing: .25em;
+}
+
+
+
+/*
+  Separator
+*/
+
+/* Content */
+
+#iro li:first-child:after {
+  /*content: '|';*/
+  /*content: '\000BB';*/ /* For » arrows */
+  content: '';
+  border-right: 2px solid;
+  transition: border-right 150ms;
+  margin-right: var(--spacing);
+}
+
+/* Hover effects */
+
+#iro ul:hover li:first-child:after {
+  /*font-weight: bolder;*/
+  border-right: 4px solid;
+}
+
+/* Link separator */
+
+:root {
+  --link-separator: '|';
+}
+
+
+/*
+  Colors
+*/
+
+/* Background */
+
+#iro body {
+  background-color: #2a2a2a;
+}
+
+/* Text */
+
+:root {
+  --text-color: white;
+}
+
+/* Heading */
+
+#iro h1 {
+  color: #ffe28a;
+}
+
+/* Categories */
+
+#iro ul:nth-child(1) {
+  color: #9ed670;
+}
+#iro ul:nth-child(1) {
+  color: #8631a6;
+}
+
+
+#iro ul:nth-child(2) {
+  color: #6bd2db;
+}
+
+#iro ul:nth-child(3) {
+  color: #ebdada;
+}
+
+#iro ul:nth-child(4) {
+  color: #e8702a;
+}
+
+#iro ul:nth-child(5) {
+  color: #ffbe4f;
+}
+
+
+
+/*
+  Amount of chars in longest category name + 1
+*/
+
+#iro li {
+  width: 8ch;
+}
+
+
+
+/*
+  Actual code
+*/
+
+#iro {
+  font-family: 'Ubuntu Mono', monospace;
+  margin: 0;
+  margin-top: 2em;
+  overflow-x: hidden;
+  text-align: left;
+}
+
+#iro h1 {
+  font-size: 8em;
+  margin: 0;
+  text-align: center;
+}
+
+#iro a {
+  /* color: inherit; */
+  text-decoration: none;
+}
+
+#iro ul {
+  padding-left: 0;
+  margin: 1em 0;
+}
+
+#iro li, a {
+  color: var(--text-color);
+  display: inline-block;
+  position: relative;
+  font-size: 2em;
+  letter-spacing: normal;
+  transition: color 200ms;
+}
+
+#iro a:hover, li {
+  color: inherit;
+}
+
+#iro li:after {
+  position: absolute;
+  right: 0;
+  height: 1em;
+}
+
+#iro li, h1 {
+  color: inherit;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+:root {
+  margin-right: var(--spacing);
+}
+
+#iro a + a:before {
+  content: var(--link-separator);
+  margin-left: var(--spacing);
+  margin-right: var(--spacing);
+  color: var(--text-color);
+}
+
+#iro div {
+  letter-spacing: -1em;
+  text-align: left;
+  display: inline-block;
+  padding-left: 2em;
+  padding-right: 2em;
 }

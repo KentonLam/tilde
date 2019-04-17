@@ -3,7 +3,7 @@ const CONFIG = {
   // the category, name, key, url, search path and color for your commands
   // if none of the specified keys are matched, the '*' key is used
   commands: [
-    [null, 'Google', '*', 'https://encrypted.google.com', '/search?q={}', 'var(--nord0)'],
+    [null, 'Google', '*', 'https://encrypted.google.com', '/search?q={}', 'var(--color0)'],
     ['Courses', 'Math2401', 'um', 'https://learn.uq.edu.au/MATH2401', null, 'rgb(63, 81, 181)'],
     ['Courses', 'Math3202', 'uo', 'https://learn.uq.edu.au/MATH3202', null, 'rgb(142, 36, 170)'],
     [false, '', 'Client Comms', 'https://learn.uq.edu.au/webapps/osc-BasicLTI-BBLEARN/iframe.jsp?course_id=_120976_1&content_id=_4440824_1&id=', null],
